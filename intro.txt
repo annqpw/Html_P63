@@ -1,0 +1,4 @@
+Вступ до HTML
+
+git config --global user.name "annqpw_006"
+git config --global user.email "evelonn@gmail.com"
