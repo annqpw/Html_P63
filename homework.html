@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Навчальна сторінка про шістнадцяткову систему числення та формування кольорів за RGB.">
+    <title>Шістнадцяткова система та RGB</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 40px 20px;
+            text-align: center;
+            color: white;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 32px;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 17px;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        section {
+            margin-bottom: 25px;
+            padding: 25px;
+            background-color: white;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #4338ca;
+        }
+
+        h3 {
+            color: #334155;
+        }
+
+        .number-system {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .number {
+            flex: 1 1 45px;
+            padding: 12px 5px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #1d4ed8;
+            background-color: #dbeafe;
+            border-radius: 8px;
+        }
+
+        .example {
+            padding: 15px;
+            margin: 15px 0;
+            background-color: #f8fafc;
+            border-left: 5px solid #6366f1;
+            border-radius: 5px;
+        }
+
+        code {
+            padding: 3px 7px;
+            color: #be123c;
+            background-color: #ffe4e6;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .rgb-blocks {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .rgb-card {
+            padding: 18px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: #f8fafc;
+        }
+
+        .color-box {
+            height: 75px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+        }
+
+        .red {
+            background-color: rgb(255, 0, 0);
+        }
+
+        .green {
+            background-color: rgb(0, 255, 0);
+        }
+
+        .blue {
+            background-color: rgb(0, 0, 255);
+        }
+
+        .color-example {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8fafc;
+            border-radius: 10px;
+        }
+
+        .color-preview {
+            width: 130px;
+            height: 100px;
+            flex-shrink: 0;
+            background-color: #ff8000;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            text-align: center;
+        }
+
+        th {
+            color: white;
+            background-color: #4f46e5;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f1f5f9;
+        }
+
+        .important {
+            padding: 15px;
+            background-color: #fef3c7;
+            border-left: 5px solid #f59e0b;
+            border-radius: 5px;
+        }
+
+        .conclusion {
+            text-align: center;
+            color: white;
+            background: linear-gradient(135deg, #4338ca, #7c3aed);
+        }
+
+        .conclusion h2 {
+            color: white;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            color: #64748b;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 25px;
+            }
+
+            section {
+                padding: 18px;
+            }
+
+            .rgb-blocks {
+                grid-template-columns: 1fr;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            th,
+            td {
+                padding: 8px 4px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Шістнадцяткова система числення та RGB</h1>
+        <p>Як комп'ютер кодує кольори за допомогою чисел?</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Що таке шістнадцяткова система числення?</h2>
+
+            <p>
+                Шістнадцяткова система числення — це система, у якій
+                використовуються 16 символів: цифри від 0 до 9 та літери
+                від A до F. Вона широко застосовується в програмуванні
+                для запису кольорів, адрес пам'яті та інших даних.
+            </p>
+
+            <div class="number-system">
+                <div class="number">0</div>
+                <div class="number">1</div>
+                <div class="number">2</div>
+                <div class="number">3</div>
+                <div class="number">4</div>
+                <div class="number">5</div>
+                <div class="number">6</div>
+                <div class="number">7</div>
+                <div class="number">8</div>
+                <div class="number">9</div>
+                <div class="number">A</div>
+                <div class="number">B</div>
+                <div class="number">C</div>
+                <div class="number">D</div>
+                <div class="number">E</div>
+                <div class="number">F</div>
+            </div>
+
+            <p>Літери відповідають таким десятковим числам:</p>
+
+            <ul>
+                <li>A = 10</li>
+                <li>B = 11</li>
+                <li>C = 12</li>
+                <li>D = 13</li>
+                <li>E = 14</li>
+                <li>F = 15</li>
+            </ul>
+
+            <div class="example">
+                <strong>Приклад:</strong>
+                <p>
+                    Число <code>10</code> у шістнадцятковій системі
+                    дорівнює 16 у десятковій системі.
+                    Число <code>FF</code> дорівнює 255.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Що таке RGB?</h2>
+
+            <p>
+                RGB — це колірна модель, назва якої утворена від трьох
+                англійських слів:
+            </p>
+
+            <div class="rgb-blocks">
+                <div class="rgb-card">
+                    <div class="color-box red"></div>
+                    <h3>R — Red</h3>
+                    <p>Червоний</p>
+                    <code>255, 0, 0</code>
+                </div>
+
+                <div class="rgb-card">
+                    <div class="color-box green"></div>
+                    <h3>G — Green</h3>
+                    <p>Зелений</p>
+                    <code>0, 255, 0</code>
+                </div>
+
+                <div class="rgb-card">
+                    <div class="color-box blue"></div>
+                    <h3>B — Blue</h3>
+                    <p>Синій</p>
+                    <code>0, 0, 255</code>
+                </div>
+            </div>
+
+            <p>
+                Кожен колір формується змішуванням червоного, зеленого
+                та синього світла. Для кожного компонента використовують
+                значення від 0 до 255.
+            </p>
+
+            <ul>
+                <li><strong>0</strong> — компонент відсутній.</li>
+                <li><strong>255</strong> — максимальна інтенсивність компонента.</li>
+            </ul>
+
+            <div class="example">
+                <strong>Основні приклади RGB:</strong>
+                <p>Чорний: <code>rgb(0, 0, 0)</code></p>
+                <p>Білий: <code>rgb(255, 255, 255)</code></p>
+                <p>Жовтий: <code>rgb(255, 255, 0)</code></p>
+                <p>Блакитний: <code>rgb(0, 255, 255)</code></p>
+                <p>Пурпуровий: <code>rgb(255, 0, 255)</code></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Як утворюється шістнадцятковий код кольору?</h2>
+
+            <p>
+                У HTML і CSS кольори часто записують за допомогою
+                шістнадцяткового коду. Він починається символом
+                <code>#</code> і містить шість символів.
+            </p>
+
+            <div class="example">
+                <p><code>#RRGGBB</code></p>
+                <ul>
+                    <li><strong>RR</strong> — інтенсивність червоного.</li>
+                    <li><strong>GG</strong> — інтенсивність зеленого.</li>
+                    <li><strong>BB</strong> — інтенсивність синього.</li>
+                </ul>
+            </div>
+
+            <p>
+                Кожна пара символів задає значення одного компонента
+                від <code>00</code> до <code>FF</code>, тобто від 0 до 255.
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Колір</th>
+                        <th>RGB</th>
+                        <th>HEX</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Чорний</td>
+                        <td>0, 0, 0</td>
+                        <td>#000000</td>
+                    </tr>
+                    <tr>
+                        <td>Білий</td>
+                        <td>255, 255, 255</td>
+                        <td>#FFFFFF</td>
+                    </tr>
+                    <tr>
+                        <td>Червоний</td>
+                        <td>255, 0, 0</td>
+                        <td>#FF0000</td>
+                    </tr>
+                    <tr>
+                        <td>Зелений</td>
+                        <td>0, 255, 0</td>
+                        <td>#00FF00</td>
+                    </tr>
+                    <tr>
+                        <td>Синій</td>
+                        <td>0, 0, 255</td>
+                        <td>#0000FF</td>
+                    </tr>
+                    <tr>
+                        <td>Жовтий</td>
+                        <td>255, 255, 0</td>
+                        <td>#FFFF00</td>
+                    </tr>
+                    <tr>
+                        <td>Помаранчевий</td>
+                        <td>255, 128, 0</td>
+                        <td>#FF8000</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="color-example">
+                <div class="color-preview"></div>
+                <div>
+                    <h3>Приклад: #FF8000</h3>
+                    <p>FF = 255 — червоний компонент.</p>
+                    <p>80 = 128 — зелений компонент.</p>
+                    <p>00 = 0 — синій компонент.</p>
+                    <p>Результат — помаранчевий колір.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Як перевести HEX у десяткову систему?</h2>
+
+            <p>
+                Щоб перевести двоцифрове шістнадцяткове число в десяткове,
+                першу цифру потрібно помножити на 16, а потім додати
+                значення другої цифри.
+            </p>
+
+            <div class="example">
+                <strong>Приклад: 80</strong>
+                <p>80₁₆ = 8 × 16 + 0 = 128₁₀</p>
+            </div>
+
+            <div class="example">
+                <strong>Приклад: FF</strong>
+                <p>FF₁₆ = 15 × 16 + 15 = 255₁₀</p>
+            </div>
+
+            <p>
+                Отже, код <code>#FF8000</code> відповідає значенням
+                RGB <code>(255, 128, 0)</code>.
+            </p>
+        </section>
+
+        <section>
+            <h2>5. Де використовують RGB і HEX?</h2>
+
+            <ul>
+                <li>Під час створення сайтів за допомогою HTML і CSS.</li>
+                <li>У графічних редакторах для вибору кольорів.</li>
+                <li>У комп'ютерній графіці та вебдизайні.</li>
+                <li>Під час розроблення ігор та інтерфейсів програм.</li>
+            </ul>
+
+            <div class="important">
+                <strong>Запам'ятай!</strong>
+                RGB задає інтенсивність трьох кольорів числами від 0 до 255,
+                а HEX записує ті самі значення у шістнадцятковій системі
+                двома символами для кожного компонента.
+            </div>
+        </section>
+
+        <section class="conclusion">
+            <h2>Висновок</h2>
+            <p>
+                Шістнадцяткова система числення дає змогу компактно
+                записувати числові значення. Модель RGB використовує
+                червоний, зелений і синій компоненти для створення
+                різноманітних кольорів. Разом вони є важливою основою
+                комп'ютерної графіки та оформлення вебсторінок.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        Навчальна HTML-сторінка • Шістнадцяткова система числення та RGB
+    </footer>
+</body>
+</html>
