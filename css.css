@@ -2,6 +2,9 @@
     color: #444;
 }
 img {
+    border: 2px solid grey;
+    margin: 5px; /*margin - зовнішній відступ (від рамки) */
+    padding: 5px; /*padding - внутрішній відступ (до рамки) */
     width: 30px;
 }
 
@@ -18,5 +21,6 @@ h1 {
 }
 .selector-table th, .selector-table td {
      border: 1px solid lightgrey;
+     padding: 5px; /*padding - внутрішній відступ (до рамки) */
 }
 
