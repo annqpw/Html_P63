@@ -25,6 +25,18 @@ h1 {
 .selector-table th, .selector-table td {
     border: 1px solid lightgray;
 }
-.color {
- color: rgb(254, 174, 174);
+.row-blue {
+    background-color: #cce5ff;
+}
+.row-green {
+    background-color: #d4edda;
+}
+.row-purple {
+    background-color: #e2d6f3;
+}
+.row-black {
+    background-color: #d6d6d6;
+}
+.row-orange {
+    background-color: #ffe5b4;
 }
