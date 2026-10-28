@@ -45,5 +45,72 @@
             Н<sub>2</sub>О
         </button> 
     </p>
+    <table class="forms-table">
+        <thead>
+            <tr>
+                <th>Елемент</th>
+                <th>Приклад</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr >
+                <td>Введення прихованого пароля</td>
+                <td><input type="password"/></td>
+            </tr>
+            <tr >
+                <td>Введення числового значення</td>
+                <td><input type="number"/></td>
+            </tr>
+            <tr >
+                <td>Введення номера телефону</td>
+                <td><input type="tel" placeholder="+380 XX XXX XX XX"></td>
+            </tr>
+            <tr >
+                <td>Вибір значення за допомогою повзунка</td>
+                <td><input type="range" min="0" max="100" value="50"></td>
+            </tr>
+            <tr >
+                <td>Скидання значень полів форми</td>
+                <td><input type="reset" value="Очистити"></td>
+            </tr>
+            <tr >
+                <td>Відправка форми на сервер</td>
+                <td><input type="submit" value="Відправити"></td>
+            </tr>
+            <tr >
+    <td>Групування пов'язаних елементів форми</td>
+    <td>
+        <fieldset>
+            <legend>Особисті дані</legend>
+            <input type="text" placeholder="Ім'я">
+        </fieldset>
+    </td>
+</tr>
+<tr>
+    <td>Список підказок під час введення тексту</td>
+    <td><input list="languages" placeholder="Оберіть мову">
+        <datalist id="languages">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JavaScript"></td>
+</tr>
+<tr>
+    <td>Групування варіантів у списку</td>
+     <td>
+        <select>
+            <optgroup label="Мови">
+                <option>Українська</option>
+                <option>Англійська</option>
+                <option>Німецька</option>
+            </optgroup>
+        </select>
+    </td>
+</tr>
+<tr>
+    <td>Робить заповнення поля обов'язковим</td>
+    <td><input type="text" required placeholder="Обов'язкове поле"></td>
+</tr>
+        </tbody>
+    </table>
 </body>
 </html>
