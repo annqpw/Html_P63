@@ -1,0 +1,111 @@
+body {
+    margin: auto;
+    max-width: 800px;
+    text-align: justify;
+}
+.checkbox-optionn {
+    color: green;
+}
+.checkbox-optiont {
+    color: red;
+}
+.checkbox-option {
+    color: blue;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-top: 25px;
+}
+.radio-option {
+    display: block;
+    width: 180px;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid transparent;
+    background-color: white;
+    cursor: pointer;
+}
+.radio-optionn {
+    display: block;
+    width: 180px;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid transparent;
+    background-color: white;
+    cursor: pointer;
+}
+
+.radio-option:has(input:checked) {
+    border: 2px solid blue;
+}
+.radio-optionn:has(input:checked) {
+    border: 2px solid pink;
+}
+
+
+.checkbox-option {
+    display: block;
+    width: 180px;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid transparent;
+    background-color: white;
+    cursor: pointer;
+}
+.checkbox-optiont {
+    display: block;
+    width: 180px;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid transparent;
+    background-color: white;
+    cursor: pointer;
+}
+.checkbox-optionn {
+    display: block;
+    width: 180px;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid transparent;
+    background-color: white;
+    cursor: pointer;
+}
+.checkbox-option:has(input:checked) {
+    border: 2px solid blue;
+}
+.checkbox-optionn:has(input:checked) {
+    border: 2px solid green;
+}
+.checkbox-optiont:has(input:checked) {
+    border: 2px solid red;
+}
+
+
+.select-option {
+    padding: 10px;
+    width: 200px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.select-option:focus {
+    border: 2px solid orange;
+    outline: none;
+}
+.nunito-regular {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-size: 16pt;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  line-height: 1.5;
+}
