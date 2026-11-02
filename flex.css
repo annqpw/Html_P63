@@ -2,6 +2,10 @@
 border: 2px solid salmon;   
 display: flex; /* режим флекс-контейнера*/
 }
+.containerr {
+border: 3px solid rgb(114, 116, 250);   
+display: flex; /* режим флекс-контейнера*/
+}
 .h-150 {
     height: 150px;
 }
@@ -28,4 +32,60 @@ display: flex; /* режим флекс-контейнера*/
 }
 .a-center {
     align-items: center; /*вирівнювання вздовж поперечної осі */
+} 
+.a-start {
+    align-items: flex-start; 
+}
+.a-end {
+    align-items: flex-end; 
+}
+.a-baseline {
+    align-items: baseline;
+}
+
+.b1,.b2,.b3,.b4 {
+    background-color: tomato;
+    border: 2px solid maroon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+.b1 {
+    height: 40px;
+}
+
+.b2 {
+    height: 70px;
+}
+
+.b3 {
+    height: 100px;
+}
+
+.b4 {
+    height: 130px;
+}
+.a-start-normal {
+    align-items: start;
+}
+.a-end-normal {
+    align-items: end;
+}
+.a-self-start {
+    align-items: self-start;
+}
+.a-self-end {
+    align-items: self-end;
+}
+.a-normal {
+    align-items: normal;
+}
+.a-stretch {
+    align-items: stretch;
+}
+.stretch-item {
+    background-color: tomato;
+    border: 2px solid maroon;
+    width: 100px;
 }
