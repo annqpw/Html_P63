@@ -4,7 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pseudo Elements</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
+        body {
+    margin: auto;
+    max-width: 800px;
+    text-align: justify;
+}
+.nunito-regular {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-size: 16pt;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  line-height: 1.5;
+}
         .battery {
             border:2px solid darkgray;
             height: 40px;
@@ -41,26 +58,26 @@
         }
         .empty::before{
             background-color: rgb(230, 94, 94);
-            width: 15%;
+            width: 18%;
         }
         .full{
-            height: 20px;
-            padding: 10px 60px;
+            height: 25px;
+            padding: 5px 60px;
             width: 50px;
         }
         .middle{
-            height: 20px;
-            padding: 10px 30px;
+            height: 25px;
+            padding: 5px 30px;
             width: 110px;
         }
         .empty{
-            height: 20px;
-            padding: 10px 5px;
-            width: 110px;
+            height: 25px;
+            padding: 5px 5px;
+            width: 160px;
         }
     </style>
 </head>
-<body>
+<body class="nunito-regular">
     <h1>Псевдоелементи</h1>
     <p>
         Окрім псевдокласів, які задають стилі в різному стані елементів,
@@ -71,6 +88,6 @@
     </p>
     <div class="battery full">75%</div>
     <div class="battery middle">45%</div>
-    <div class="battery empty">15%</div>
+    <div class="battery empty">18%</div>
 </body>
 </html>
