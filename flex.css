@@ -107,3 +107,44 @@ display: flex; /* режим флекс-контейнера*/
     background-color: aqua;
     flex:3;
 }
+.card {
+border-radius: 10px ;
+box-shadow: 0 3px 3px 2px #bbb; /* 0-горизонтальний зсув; 3px-вертикальний зсув; 3px-розмір самої тіні; 2px-блюр,розмиття.*/
+display:flex;
+flex-direction: column;
+height: 350px;
+width: 250px;
+
+}
+.card-image {
+background-color: chocolate ;
+border-radius: 10px 10px 0 0 ; /*10px-лівий верхній 10px-правйи верхній 0-правий нижній 0-лівий нижній*/
+height: 40%;
+width: 100%;
+}
+.card-headline,.card-subhead,.card-text {
+    padding-left:10px;
+    padding-right:10px;
+}
+.card-headline {
+ font-size: xx-large;
+   padding-top: 7px;
+}
+.card-subhead {
+font-size: x-large;
+}
+.card-text {
+    flex:1;
+   padding-top: 14px;
+}
+.card-footer {
+display:flex;
+justify-content:end;
+}
+.card-button {
+
+}
+.card-button:hover {
+    background-color: cadetblue;
+}
+
