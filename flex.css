@@ -9,6 +9,9 @@ display: flex; /* режим флекс-контейнера*/
 .h-150 {
     height: 150px;
 }
+.h-auto {
+    height: auto !important;
+}
 .item {
     background-color: tomato;
     border: 2px solid maroon;
@@ -88,4 +91,19 @@ display: flex; /* режим флекс-контейнера*/
     background-color: tomato;
     border: 2px solid maroon;
     width: 100px;
+}
+.a-stretch {
+    align-items: stretch;
+}
+.flex-1 {
+    background-color: lime;
+    flex:1;
+}
+.flex-2 {
+    background-color: orange;
+    flex: 2;
+}
+.flex-3 {
+    background-color: aqua;
+    flex:3;
 }
