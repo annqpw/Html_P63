@@ -38,18 +38,19 @@ color:rgb(112, 111, 111)
 .card-footer {
 display:flex;
 justify-content:end;
+margin: 8px 10px; 
 }
-.card-button,.card-buttonn {
+.card-button {
 margin: 10px;
+border: 2px solid transparent;
+border-radius: 5px;
+font-size: x-large;
 }
-.card-button:hover, .card-buttonn:hover {
-    background-color: cadetblue;
-}
-.card-buttonn:focus { 
-   background-color: rgb(223, 110, 144);
+.card-button:hover {
+    background-color: rgb(62, 206, 62);
 }
 .card-button:focus { 
-   background-color: rgb(62, 206, 62);
+   border: 2px solid rgb(4, 131, 4);
 }
 .arimo-uniquifier {
   font-family: "Arimo", sans-serif;
