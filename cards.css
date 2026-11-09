@@ -37,7 +37,7 @@ color:rgb(112, 111, 111)
 }
 .card-footer {
 display:flex;
-justify-content:end;
+justify-content:space-between;
 margin: 8px 10px; 
 }
 .card-button {
@@ -64,4 +64,38 @@ font-size: x-large;
   font-optical-sizing: auto;
   font-weight: weight (200 500);
   font-style: normal;
+}
+.card-price {
+  display: flex;
+  flex-direction: column;
+}
+.card-price-discount {
+  display:flex;
+  flex-direction:row ;
+  gap:4px;
+}
+.card-price-old {
+  text-decoration: line-through;
+  color:#7a7676;
+  font-size: 14px;
+}
+.card-price-actual {
+  color:rgb(232, 66, 66);
+  font-size: 18px;
+  font-weight:600;
+}
+.card-price-percent {
+border-radius: 10px ;
+display:flex;
+flex-direction: column;
+height: 20px;
+width: 40px;
+background-color: red;
+color: azure ;
+text-align: center;
+font-weight: 600;
+padding: 0 3px;
+}
+.a-center {
+ align-items: center; /*вирівнювання вздовж поперечної осі */
 }
