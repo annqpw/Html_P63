@@ -22,25 +22,25 @@ width: 100%;
     padding-right:10px;
 }
 .card-headline {
- font-size: xx-large;
+ font-size: 30px;
    padding-top: 7px;
 }
 .card-subhead {
-font-size: 20px;
-color:rgb(112, 111, 111)
+font-size: 23px;
+color:rgb(230, 230, 11)
 }
 .card-text {
     flex:1;
    padding-top: 14px;
    font-size: 14px;
-   color:rgb(36, 33, 33)
+   color:rgb(75, 69, 69)
 }
 .card-footer {
 display:flex;
 justify-content:space-between;
 margin: 8px 10px; 
 }
-.card-button {
+.card-button,.card-buttonn {
 margin: 10px;
 border: 2px solid transparent;
 border-radius: 5px;
@@ -51,6 +51,12 @@ font-size: x-large;
 }
 .card-button:focus { 
    border: 2px solid rgb(4, 131, 4);
+}
+.card-buttonn:hover {
+    background-color: rgb(218, 18, 115);
+}
+.card-buttonn:focus { 
+   border: 2px solid rgb(199, 17, 202);
 }
 .arimo-uniquifier {
   font-family: "Arimo", sans-serif;
@@ -98,4 +104,9 @@ padding: 0 3px;
 }
 .a-center {
  align-items: center; /*вирівнювання вздовж поперечної осі */
+}
+.rating-number {
+    font-size: 12px;
+    color: rgb(230, 230, 9);
+    vertical-align: middle;
 }
