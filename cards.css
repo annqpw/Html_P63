@@ -139,3 +139,6 @@ padding: 0 3px;
     color: rgb(230, 230, 9);
     vertical-align: middle;
 }
+.card:hover {
+   transform: scale(1.05);/* 0-горизонтальний зсув; 3px-вертикальний зсув; 3px-розмір самої тіні; 2px-блюр,розмиття.*/
+}
