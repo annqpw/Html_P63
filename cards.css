@@ -1,9 +1,24 @@
+.page-header{
+  font-size: 2vw;
+
+}
+.page-headerr{
+  font-size: 2vw;
+}
+.cards-container {
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;/*переносить рамки коли багато місця*/
+  gap: 15px 2%;
+  justify-content: center;
+  margin: 10px 10%;
+}
 .card {
 border-radius: 10px ;
 box-shadow: 0 3px 3px 2px #bbb; /* 0-горизонтальний зсув; 3px-вертикальний зсув; 3px-розмір самої тіні; 2px-блюр,розмиття.*/
 display:flex;
 flex-direction: column;
-height: 470px;
+height: 400px;
 width: 250px;
 
 }
@@ -20,19 +35,33 @@ width: 100%;
 .card-headline,.card-subhead,.card-text {
     padding-left:10px;
     padding-right:10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .card-headline {
  font-size: 30px;
    padding-top: 7px;
+   white-space: nowrap;
 }
 .card-subhead {
 font-size: 23px;
+white-space: nowrap;
 color:rgb(230, 230, 11)
+}
+.spacer {
+  flex: 1;
 }
 .card-text {
     flex:1;
    padding-top: 14px;
    font-size: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    line-height: 20px;
+    max-height: 40px;
    color:rgb(75, 69, 69)
 }
 .card-footer {
